@@ -2,20 +2,20 @@ package dioTeste.teste1;
 
 public class Quadrado implements AreaCalculavel {
 
-    @Override
-    public int Numero() {
-        return 0;
-    }
+    private int lado;
 
+    public int getLado(){
+        return lado;
+    }
+    public void setLado(){
+        this.lado = lado;
+    }
     @Override
-    public int Numero1() {
-        return 0;
+    public float getArea() {
+        int area = 0;
+        area = lado * lado;
+        return area;
     }
-
-    int areaDoQuadrado(){
-        int areaDoQuadrado = Numero() * Numero1();
-        return areaDoQuadrado;
-        }
-    }
+}
 
 
