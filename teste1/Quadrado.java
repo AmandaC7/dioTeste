@@ -2,9 +2,13 @@ package dioTeste.teste1;
 
 public class Quadrado implements AreaCalculavel {
 
-    private int lado;
+    private float lado;
 
-    public int getLado(){
+    public Quadrado(float lado) {
+        this.lado = lado;
+    }
+
+    public float getLado(){
         return lado;
     }
     public void setLado(){
@@ -12,9 +16,7 @@ public class Quadrado implements AreaCalculavel {
     }
     @Override
     public float getArea() {
-        int area = 0;
-        area = lado * lado;
-        return area;
+        return (lado*lado);
     }
 }
 

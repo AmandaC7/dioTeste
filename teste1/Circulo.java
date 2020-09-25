@@ -3,35 +3,27 @@ package dioTeste.teste1;
 import java.util.Scanner;
 
 public class Circulo implements AreaCalculavel {
-    private float pi;
-    private int raio;
-    Scanner scan = new Scanner(System.in);
-    public float getPi() {
-        return pi;
-    }
 
-    public void setPi(float pi) {
-        this.pi = pi;
-    }
+    private float raio;
 
-    public int getRaio() {
-        return raio;
-    }
 
-    public void setRaio(int raio) {
+    public Circulo(float raio) {
         this.raio = raio;
     }
 
+    public float getRaio() {
+        return raio;
+    }
+    public void setRaio(float raio) {
+        this.raio = raio;
+    }
 
     @Override
     public float getArea() {
-        float pi = (float) 3.14;
-        float raio = 0;
-        float area = pi * (raio * raio);
-        return area;
-        }
-
+        return (float) ((raio*raio)* (3.14));
     }
+
+}
 
 
 

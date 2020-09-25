@@ -4,23 +4,29 @@ public class Retangulo implements AreaCalculavel{
 
     private int lado;
     private int altura;
+
+
+    public Retangulo(int lado, int altura) {
+        this.lado = lado;
+        this.altura = altura;
+    }
+
     public int getLado(){
         return lado;
     }
     public void setLado(){
         this.lado = lado;
     }
+
     public int getAltura(){
         return altura;
     }
     public void setAltura(){
         this.lado = altura;
     }
+
     @Override
     public float getArea() {
-        int area = 0;
-        int altura = 0;
-        area = lado * altura;
-        return area;
+        return (lado*altura);
     }
 }
